@@ -1,0 +1,11 @@
+.Sort {
+    border-radius: 7px !important;
+    margin-left: 10px !important;
+    border-color: #d1d1d1;
+    padding-left: 10px;
+}
+.Sort:focus {
+    border-radius: 7px 7px 0 0 !important;
+    box-shadow: 0 0 5px #2d85ff;
+    border: 4px solid #c2dbfe;
+}
