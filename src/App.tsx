@@ -79,18 +79,15 @@ const App: React.FC = () => {
             <SearchBar
               string={searchString}
               onChangeString={setSearchString}
-              onChangeSortString={(value: string) => setSortBy(value)} // Updated function signature
+              onChangeSortString={(value: string) => setSortBy(value)}
               peopleList={peopleList}
             />
           )}
           <Row>
             {filteredPeopleList.length > 0 ? (
               filteredPeopleList.map((person: Person) => (
-                <Col
-                  key={person.email}
-                  className="mb-4 col-12 col-sm-6 col-lg-3 pt-5"
-                >
-                  <PersonCard person={person} onEdit={onEditPerson} />
+                <Col key={person.email} className="mb-4 col-12 col-sm-6 col-lg-3 pt-5">
+                  <PersonCard person={person} onEdit={onEditPerson} searchString={searchString} />
                 </Col>
               ))
             ) : (

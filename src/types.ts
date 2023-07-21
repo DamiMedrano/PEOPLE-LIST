@@ -8,6 +8,7 @@ export interface Person {
 
 export interface PersonCardProps {
   person: Person;
+  searchString: string;
   onEdit: (oldPerson: Person, newPerson: Person) => void;
 }
 
