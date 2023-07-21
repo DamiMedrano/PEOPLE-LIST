@@ -57,4 +57,4 @@
 11. **How to render an HTML string coming from the server**
     To render an HTML string coming from the server, you should be cautious as it can expose your app to security vulnerabilities like cross-site scripting (XSS) attacks. However, if you have trusted HTML content, you can use the `dangerouslySetInnerHTML` attribute in React.
 
-   Example: Actually, there is an actual `dangerouslySetInnerHTML` usage in my code for this porject, used it to highlight what the user seachs in the card component. You can check the <PersonCard /> component as an example.
+   Example: Actually, there is an actual `dangerouslySetInnerHTML` usage in my code for this porject, used it to highlight what the user seachs in the card component. You can check the `PersonCard` component as an example.
